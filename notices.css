@@ -1,0 +1,31 @@
+hr{
+    border-color: blue;
+    border-width: 3px;
+}
+#Notices-title{
+    width: 600px;
+    text-align: right;
+    margin-right:70px;
+    color: blue;
+}
+
+#Notice-head-img{
+    width: 600px;
+    margin-right: 330px;
+}
+
+#Notices-title h2{
+    font-size: 30px;
+    color: blue;
+}
+
+#Notice-head-img img{
+    width: 600px;
+
+}
+
+#head-Notices{
+    padding: 200px 0 0 0;
+    background-color: #f3f5f8;
+    height: 50vh;
+}
