@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="itel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="notices.css">
     <title>Itel</title>
 </head>
 <body>
@@ -19,18 +20,62 @@
             <div id="navlinks">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="index.html">SOBRE</a></li>
-                    <li><a href="contact-form">ALUNO</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="index.html">SOBRE <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">História</a></li>
+                            <li><a href="#">Missão e Valores</a></li>
+                            <li><a href="#">Logotipo</a></li>
+                            <li><a href="#">Instalações</a></li>
+                            <li><a href="#">Infraestruturas</a></li>
+                            <li class="submenu-item">
+                                <a href="#">Institucional <i class="fa-solid fa-chevron-right"></i></a>
+                            </li>
+                            <li><a href="#">Professores</a></li>
+                            <li><a href="#">WebMail</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="contact-form">ALUNO <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Ser Aluno</a></li>
+                            <li><a href="#">AVITEL</a></li>
+                        </ul>
+                    </li>
+
                     <li><a href="notices.html">ACTUALIDADE</a></li>
-                    <li><a href="#">SECRETARIA</a></li>
-                    <li><a href="#">GALERIA</a></li>
-                    <li><a href="#">HAUWEI</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">SECRETARIA <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Diplomados</a></li>
+                            <li><a href="#">Secretaria Online</a></li>
+                            <li><a href="#">Vitrine Online</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">GALERIA <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Banco de Fotos</a></li>
+                            <li><a href="#">Background ITEL</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#">HUAWEI <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Lead23</a></li>
+                        </ul>
+                    </li>
+
                     <li><a href="#">CFITEL</a></li> 
                 </ul>
             </div>
 
             <div id="navbutton">
-                <button><a href="Login/login.html">Inscrição</a></button>
                 <button><a href="Login/login.html">Inscrição</a></button>
             </div>
         </nav>
@@ -120,6 +165,65 @@
             <img src="Imagens/Captura de tela 2026-01-05 073114.png" alt="Galeria 4">
             <img src="Imagens/Captura de tela 2026-01-05 073051.png" alt="Galeria 5">
             <img src="Imagens/Captura de tela 2026-01-05 073104.png" alt="Galeria 6">
+        </div>
+    </section>
+
+    <section id="noticias-home" class="sections">
+        <h2>ÚLTIMAS DO ITEL</h2>
+        <div class="container">
+            <div class="news-card">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <img src="Eventos e Notícias_files/1764450599_692b61271c26d.jpg" alt="IENA 2025">
+                        <img src="Eventos e Notícias_files/1764450599_692b61271dac5.jpg" alt="IENA 2025">
+                        <img src="Eventos e Notícias_files/1764450599_692b61271f27b.jpg" alt="IENA 2025">
+                        <img src="Eventos e Notícias_files/1764450599_692b61271c26d.jpg" alt="IENA 2025">
+                    </div>
+                    <div class="carousel-overlay"><span><i class="fa-solid fa-image"></i> 1/2</span></div>
+                </div>
+                <div class="news-content">
+                    <span class="date-tag"><i class="fa-regular fa-clock"></i> 03 Mar, 2026</span>
+                    <h3>ITEL Brilha na IENA 2025</h3>
+                    <p>Nossos alunos conquistaram 6 medalhas na Feira Internacional de Invenções na Alemanha.</p>
+                    <a href="notices.html" class="btn-link">Ler Notícia <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <img src="Eventos e Notícias_files/1764450599_692b61271b3ae.jpg" alt="Matrículas">
+                        <img src="Eventos e Notícias_files/1764450599_692b61271ded6.jpg" alt="Exames">
+                        <img src="Eventos e Notícias_files/1764451006_692b62bebea58.jpg" alt="Matrículas">
+                        <img src="Eventos e Notícias_files/1764450599_692b61271b3ae.jpg" alt="Matrículas">
+                    </div>
+                    <div class="carousel-overlay"><span><i class="fa-solid fa-image"></i> 1/2</span></div>
+                </div>
+                <div class="news-content">
+                    <span class="date-tag"><i class="fa-regular fa-clock"></i> 28 Fev, 2026</span>
+                    <h3>Calendário de Exames 2026</h3>
+                    <p>Já estão disponíveis as datas para os exames de admissão e confirmação de matrículas.</p>
+                    <a href="notices.html" class="btn-link">Ler Notícia <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <img src="Eventos e Notícias_files/1764450599_692b61271c87c.jpg" alt="Workshop">
+                        <img src="Eventos e Notícias_files/1764451006_692b62bebef5e.jpg" alt="Workshop">
+                        <img src="Eventos e Notícias_files/1764451006_692b62bebff35.jpg" alt="Workshop">
+                        <img src="Eventos e Notícias_files/1764450599_692b61271c87c.jpg" alt="Workshop">
+                    </div>
+                    <div class="carousel-overlay"><span><i class="fa-solid fa-image"></i> 1/2</span></div>
+                </div>
+                <div class="news-content">
+                    <span class="date-tag"><i class="fa-regular fa-clock"></i> 25 Fev, 2026</span>
+                    <h3>Parceria Huawei & ITEL</h3>
+                    <p>Inauguração do novo laboratório 5G para capacitação avançada de técnicos angolanos.</p>
+                    <a href="notices.html" class="btn-link">Ler Notícia <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 

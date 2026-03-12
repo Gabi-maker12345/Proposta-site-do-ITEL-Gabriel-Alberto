@@ -1,28 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-ao">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../itel.css"> 
     <link rel="stylesheet" href="login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Login do Aluno | ITEL</title>
 </head>
-<body>
-    
-</body>
-    <header id="header">
-        <div id="particles-js"></div>
-            <script src="particles.js-master/particles.js-master/particles.js"></script>
-            <script src="particles.js-master/particles.js-master/demo/js/app.js"></script>
+<body class="login-page">
+    <div class="loader"></div>
 
-            <div id="login-menu">
-                <form id="formulario">
-                    <h1 id="title">Login</h1>
-                    <input type="email" placeholder="Digite seu email">
-                    <input type="text" placeholder="Digite sua senha">
-                    <p>Esqueceu a senha? <a href="">Clique aqui!</a></p>
-                    <input type="submit" value="Enviar">
-                    <p>Não tem uma conta? <a href="">Cadastre-se</a></p>
-                </form>
+    <main class="login-container">
+        <div class="login-visual-panel">
+            <div class="visual-content">
+                <a href="../index.html" class="login-logo">
+                    <img src="../Imagens/logo.png" alt="Logo ITEL">
+                </a>
+                <div class="welcome-text">
+                    <span class="tag">Portal do Aluno</span>
+                    <h1>Bem-vindo de volta, Futuro Gigante.</h1>
+                    <p>Aceda às suas notas, horários, materiais de apoio e conecte-se com a inovação tecnológica do ITEL.</p>
+                </div>
+                <div class="visual-footer">
+                    <p>&copy; 2026 ITEL. Tecnologia a serviço da educação.</p>
+                </div>
             </div>
-    </header>
+            <div class="visual-background"></div>
+        </div>
+
+        <div class="login-form-panel">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Iniciar Sessão</h2>
+                    <p>Insira as suas credenciais institucionais para aceder ao portal.</p>
+                </div>
+
+                <form id="student-login-form">
+                    <div class="input-container">
+                        <label for="student-id"><i class="fa-solid fa-id-card"></i> Nº de Processo / E-mail</label>
+                        <input type="text" id="student-id" placeholder="Ex: 20230123 ou nome@itel.gov.ao" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="student-password"><i class="fa-solid fa-lock"></i> Palavra-passe</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="student-password" placeholder="Digite a sua senha" required>
+                            <button type="button" class="toggle-password" tabindex="-1">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <label class="remember-me">
+                            <input type="checkbox">
+                            <span>Lembrar-me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+
+                    <button type="submit" class="submit-btn primary-btn">
+                        <span>Aceder ao Portal</span>
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </button>
+                </form>
+
+                <div class="form-footer">
+                    <p>Problemas com o acesso? <a href="../contact.html">Contacte a Secretaria</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
